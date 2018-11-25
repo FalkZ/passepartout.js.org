@@ -7,6 +7,7 @@ html {
     min-height: 100%;
     background: linear-gradient(30deg, #fba129, #f75454);
     background-repeat: no-repeat;
+    overflow-y: auto;
 }
 
 main {
@@ -23,7 +24,6 @@ main {
 * {
     color: black;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
     line-height: 1.6em;
     margin: 0;
 }
@@ -91,10 +91,9 @@ pre, blockquote {
     margin: 0 -10px;
 }
 
-pre > code, blockquote {
+pre > code {
     display: block;
     padding: 10px;
-    background: black;
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -133,9 +132,31 @@ blockquote {
     right: 5px;
 }
 
-code, code *, blockquote {
-    font-size: 14px;
+code, code * {
     font-family: monospace;
+}
+
+pre {
+    max-width: 100%;
+    overflow-x: auto;
+    background: black;
+}
+
+main {
+    ::-webkit-scrollbar {
+        width: 22px;
+        background: none;
+
+        &-thumb {
+            height: 30px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.2);
+
+            &:active {
+                background: rgba(255, 255, 255, 0.3);
+            }
+        }
+    }
 }
 
 p code {
