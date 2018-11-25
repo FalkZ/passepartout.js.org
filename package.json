@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "highlight.js": "^9.13.1",
+    "marked": "^0.5.2",
+    "passepartout": "0.0.2",
+    "pygmentize-bundled": "^2.3.0"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.7",
+    "stylus": "^0.54.5"
+  },
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --out-dir=docs"
+  }
+}

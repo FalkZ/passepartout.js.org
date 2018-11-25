@@ -1,0 +1,139 @@
+@import './highlight.css';
+
+black = #111533;
+grey = #26283b;
+
+html {
+    min-height: 100%;
+    background: linear-gradient(30deg, #fba129, #f75454);
+    background-repeat: no-repeat;
+}
+
+main {
+    padding: 40px;
+    background: white;
+    display: table;
+    margin: 40px auto;
+    max-width: 500px;
+    border-radius: 8px;
+    padding-top: 0;
+    box-shadow: inset 2px 2px 28px -7px rgba(17, 21, 51, 1);
+}
+
+* {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 12vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    // letter-spacing: 0.05em;
+    color: #313342;
+    color: black;
+    margin: 0.5em 0;
+}
+
+i {
+    color: rgba(0, 0, 0, 0.3);
+    font-style: normal;
+}
+
+img {
+    font-size: 120px;
+    pointer-events: none;
+    height: 0.7em;
+    display: inline-block;
+    background: #fba129;
+    margin-right: -0.3em;
+    position: relative;
+    z-index: 1;
+}
+
+h2, h3 {
+    // /font-family: 'Fira Sans', sans-serif;
+    margin-top: 0.6em;
+    font-weight: 800;
+    margin-bottom: 0.3em;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+blockquote::before {
+    content: '!';
+    position: absolute;
+    left: -30px;
+}
+
+h3 {
+    font-size: 30px;
+    position: relative;
+}
+
+blockquote {
+    margin: 0;
+}
+
+pre, blockquote {
+    margin: 0 -20px;
+}
+
+pre > code, blockquote {
+    display: block;
+    padding: 20px;
+    background: black;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+*:not(pre) > code {
+    position: relative;
+    top: -0.1em;
+    padding: 5px;
+    background: black;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.hljs-tag {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#version {
+    background: black;
+    font-size: 12px;
+    font-family: 'Fira Sans', monospace;
+    font-weight: bold;
+    color: #98c379;
+    display: table;
+    padding: 0 0.6em;
+    height: 23px;
+    line-height: 23px;
+    border-radius: 1em;
+    position: relative;
+    float: right;
+    top: -118px;
+    right: 5px;
+}
+
+code, code *, blockquote {
+    font-size: 14px;
+    font-family: monospace;
+}
+
+p code {
+    display: inline-block;
+}
