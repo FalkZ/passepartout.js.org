@@ -2,7 +2,7 @@
   "dependencies": {
     "highlight.js": "^9.13.1",
     "marked": "^0.5.2",
-    "passepartout": "0.0.2"
+    "passepartout": "latest"
   },
   "devDependencies": {
     "cssnano": "^4.1.7",

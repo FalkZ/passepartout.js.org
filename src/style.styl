@@ -32,10 +32,12 @@ h1 {
     color: black;
     text-align: center;
     font-size: 12vw;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
     font-weight: bold;
     margin: 0;
+}
+
+strong {
+    font-size: 16px;
 }
 
 p {
@@ -53,13 +55,13 @@ i {
 }
 
 img {
-    font-size: 120px;
+    font-size: 12vw;
     pointer-events: none;
-    height: 0.7em;
+    height: 0.75em;
     display: inline-block;
-    background: #fba129;
     margin-right: -0.3em;
     position: relative;
+    top: 0.2em;
     z-index: 1;
 }
 
@@ -85,19 +87,21 @@ h3 {
     position: relative;
 }
 
-blockquote {
-    margin: 0;
-}
-
 pre, blockquote {
-    margin: 0 -20px;
+    margin: 0 -10px;
 }
 
 pre > code, blockquote {
     display: block;
-    padding: 20px;
+    padding: 10px;
     background: black;
     color: rgba(255, 255, 255, 0.6);
+}
+
+blockquote {
+    margin-top: 20px;
+    background: #eef;
+    padding: 3px 10px;
 }
 
 *:not(pre) > code {

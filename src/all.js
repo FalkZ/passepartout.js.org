@@ -1,7 +1,8 @@
-import passepartout from 'passepartout';
+import passepartout, { html } from 'passepartout';
 import marked from 'marked';
 import './style.styl';
 import hljs from 'highlight.js';
+import icon from './icon.svg';
 
 marked.setOptions({
   highlight: (code, language) => {
@@ -13,14 +14,8 @@ marked.setOptions({
   }
 });
 
-const html = string => {
-  const e = document.createElement('div');
-  e.innerHTML = string;
-  return e.children.length > 1 ? e : e.children[0];
-};
-
 const view = [
-  [{ _: 'h1' }, 'passepartout'],
+  [{ _: 'h1' }, [{ _: 'img', src: icon }], 'passepartout'],
   [
     { _: 'main' },
     fetch(
