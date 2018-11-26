@@ -1,5 +1,5 @@
 language: node_js
-script: 'parcel build src/index.html --out-dir docs --public-url .'
+script: 'npm run build'
 deploy:
   provider: pages
   skip-cleanup: true
