@@ -1,0 +1,191 @@
+@import './highlight.css';
+
+black = #111533;
+grey = #26283b;
+
+html {
+    min-height: 100%;
+    background: linear-gradient(80deg, #fba129, #f75454);
+    background-repeat: no-repeat;
+    overflow-y: auto;
+}
+
+main {
+    padding: 40px;
+    background: white;
+    display: table;
+    margin: 40px auto;
+    max-width: 500px;
+    border-radius: 8px;
+    padding-top: 0;
+    box-shadow: inset 2px 2px 28px -7px rgba(17, 21, 51, 1);
+}
+
+* {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 12vw;
+    font-weight: bold;
+    margin: 0;
+    // padding-right: 0.5em;
+    overflow: hidden;
+    max-width: 100wv;
+    display: block;
+}
+
+strong {
+    font-size: 16px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    // letter-spacing: 0.05em;
+    color: #313342;
+    color: black;
+    margin: 0.5em 0;
+}
+
+i {
+    color: rgba(0, 0, 0, 0.3);
+    font-style: normal;
+}
+
+img {
+    font-size: 12vw;
+    pointer-events: none;
+    height: 0.75em;
+    display: inline-block;
+    margin-right: -0.3em;
+    position: relative;
+    top: 0.2em;
+    z-index: 1;
+}
+
+h2, h3, h4 {
+    // /font-family: 'Fira Sans', sans-serif;
+    margin-top: 1em;
+    font-weight: 800;
+    margin-bottom: 0.3em;
+}
+
+h4 {
+    margin-top: 1em;
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+pre, blockquote {
+    // margin: 0 -10px;
+}
+
+pre {
+    margin: 0.3em 0;
+}
+
+*:not(blockquote)>pre {
+    margin-bottom: 1.6em;
+}
+
+pre > code {
+    display: block;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+blockquote {
+    margin-top: 20px;
+    background: #eef;
+    padding: 3px 10px;
+    margin-bottom: 1em;
+}
+
+*:not(pre) > code {
+    position: relative;
+    top: -0.1em;
+    padding: 0 5px;
+    padding-bottom: 2px;
+    background: black;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.hljs-tag {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#version {
+    background: black;
+    font-size: 12px;
+    font-family: 'Fira Sans', monospace;
+    font-weight: bold;
+    color: #98c379;
+    display: table;
+    padding: 0 0.6em;
+    height: 23px;
+    line-height: 23px;
+    border-radius: 1em;
+    position: relative;
+    float: right;
+    top: -118px;
+    right: 5px;
+}
+
+code, code * {
+    font-family: monospace;
+    font-size: 14px;
+}
+
+pre {
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: auto;
+    background: black;
+}
+
+main {
+    ::-webkit-scrollbar {
+        width: 22px;
+        background: none;
+
+        &-thumb {
+            height: 30px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.2);
+
+            &:active {
+                background: rgba(255, 255, 255, 0.3);
+            }
+        }
+    }
+}
+
+p code {
+    display: inline-block;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+
+    td, th {
+        padding: 3px 10px;
+
+        &:nth-child(2) {
+            background: #eef;
+        }
+    }
+}
