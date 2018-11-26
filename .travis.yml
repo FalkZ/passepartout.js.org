@@ -3,9 +3,10 @@ node_js:
   - '9'
 
 deploy:
-  provider: script
+  provider: pages
   script: 'npm run build'
-  skip_cleanup: true
+  skip-cleanup: true
+  # github-token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
   keep-history: true
   on:
     branch: master
