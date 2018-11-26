@@ -69,11 +69,16 @@ img {
     z-index: 1;
 }
 
-h2, h3 {
+h2, h3, h4 {
     // /font-family: 'Fira Sans', sans-serif;
     margin-top: 0.6em;
     font-weight: 800;
     margin-bottom: 0.3em;
+}
+
+h4{
+     margin-top: 1em;
+    font-size: 20px;
 }
 
 h2 {
@@ -92,9 +97,12 @@ h3 {
 }
 
 pre, blockquote {
-    margin: 0 -10px;
+    //margin: 0 -10px;
 }
 
+pre{
+    margin: 0.3em 0;
+}
 pre > code {
     display: block;
     padding: 10px;
@@ -142,7 +150,7 @@ code, code * {
 
 pre {
     box-sizing: border-box;
-    max-width: calc(100% + 20px);
+    max-width: 100%;
     overflow-x: auto;
     background: black;
 }

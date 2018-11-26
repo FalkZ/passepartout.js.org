@@ -31,7 +31,8 @@ hue-6-2: #e6c07b
 
 .hljs-doctag,
 .hljs-keyword,
-.hljs-formula {
+.hljs-formula,
+.hljs-function {
 	color: #c678dd;
 }
 
@@ -39,7 +40,8 @@ hue-6-2: #e6c07b
 .hljs-name,
 .hljs-selector-tag,
 .hljs-deletion,
-.hljs-subst {
+.hljs-subst,
+.hljs-params {
 	color: #e06c75;
 }
 
