@@ -1,9 +1,11 @@
 language: node_js
-script: 'npm run build'
+node_js:
+  - '9'
+
 deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
+  provider: script
+  script: 'npm run build'
+  skip_cleanup: true
   keep-history: true
   on:
     branch: master
