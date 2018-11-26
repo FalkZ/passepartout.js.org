@@ -1,10 +1,9 @@
 language: node_js
 cache: npm
-before_deploy:
-  script: 'npm run build'
-  skip-cleanup: true
+
 deploy:
   provider: pages
+  script: 'npm run build'
   skip-cleanup: true
   github-token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
   # keep-history: true
